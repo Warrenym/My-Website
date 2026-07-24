@@ -1,0 +1,271 @@
+/* ---------- Font Faces ---------- */
+@font-face {
+    font-family: "Poppins";
+    src: url(../fonts/Poppins/Poppins-Regular.ttf);
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "Poppins";
+    src: url(../fonts/Poppins/Poppins-Bold.ttf);
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: "Montserrat";
+    src: url(../fonts/Montserrat/Montserrat-Regular.ttf);
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "Montserrat";
+    src: url(../fonts/Montserrat/Montserrat-SemiBold.ttf);
+    font-weight: 600;
+}
+
+
+/* ---------- Style Guide Variables ---------- */
+:root {
+    /* Colors */
+    --color-primary: #D34F73;
+    --color-secondary: #DA7F67;
+    --color-tertiary: #DBBEA1;
+    --color-white: #FFF9EC;
+    --color-black: #201E1F;
+    --gradient-1: linear-gradient(90deg, var(--color-primary), var(--color-secondary));
+    --gradient-2: linear-gradient(90deg, var(--color-primary), var(--color-tertiary));
+
+    /* Layout */
+    --content-inset: 3rem;
+}
+
+
+/* ---------- Reset ---------- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--color-white);
+    color: var(--color-black);
+    font-family: "Montserrat", sans-serif;
+    position: relative;
+}
+
+/* Decorative guide lines that frame the content */
+body::before,
+body::after {
+    content: "";
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    width: 1px;
+    background-color: rgba(211, 79, 115, 0.25);
+    pointer-events: none;
+    z-index: 1;
+}
+
+body::before {
+    left: var(--content-inset);
+}
+
+body::after {
+    right: var(--content-inset);
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style: none;
+}
+
+
+/* ---------- Default Text Styles ---------- */
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Poppins", sans-serif;
+}
+
+h1 {
+    font-size: clamp(2.5rem, 7vw, 6rem);
+    font-weight: 700;
+    line-height: 1.05;
+}
+
+h2 {
+    font-size: clamp(2rem, 5vw, 4rem);
+    font-weight: 700;
+}
+
+h3 {
+    font-size: clamp(1.75rem, 4vw, 2.8rem);
+    font-weight: 400;
+}
+
+h4 {
+    font-size: clamp(1.5rem, 3vw, 2rem);
+    font-weight: 700;
+}
+
+h5 {
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+h6 {
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+p {
+    font-family: "Montserrat", sans-serif;
+    font-size: 1rem;
+}
+
+
+/* ---------- Header ---------- */
+#header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5rem var(--content-inset);
+    border-bottom: 1px solid var(--color-black);
+}
+
+#header .logo {
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-size: 1.5rem;
+    color: var(--color-primary);
+}
+
+.nav-links {
+    display: flex;
+    gap: 2.5rem;
+}
+
+.nav-links a {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    font-size: 1rem;
+}
+
+.nav-links .highlight-link {
+    color: var(--color-primary);
+}
+
+
+/* ---------- Hero Section ---------- */
+#hero {
+    padding: 6rem var(--content-inset) 8rem;
+}
+
+#hero .eyebrow {
+    font-family: "Poppins", sans-serif;
+    font-style: italic;
+    font-size: 1.75rem;
+    color: var(--color-primary);
+    margin-bottom: 0.5rem;
+}
+
+#hero h1 {
+    color: var(--color-black);
+    margin-bottom: 1.5rem;
+}
+
+#hero .intro {
+    max-width: 32rem;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+}
+
+
+/* ---------- Social Links ---------- */
+.social-links {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 3rem;
+}
+
+.social-links a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 2.5rem;
+    height: 2.5rem;
+    color: var(--color-primary);
+    transition: color 0.2s ease, background-color 0.2s ease;
+}
+
+.social-links svg {
+    width: 100%;
+    height: 100%;
+}
+
+.social-links a:hover {
+    color: var(--color-white);
+}
+
+.social-links a:hover circle:first-child {
+    fill: var(--color-primary);
+}
+
+
+/* ---------- Button ---------- */
+.btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 0.9rem 1.75rem;
+    border-radius: 2rem;
+    background: var(--gradient-1);
+    color: var(--color-white);
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    font-size: 1rem;
+    box-shadow: 0 0.5rem 1rem rgba(211, 79, 115, 0.35);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.btn svg {
+    width: 1rem;
+    height: 1rem;
+}
+
+.btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 0.75rem 1.25rem rgba(211, 79, 115, 0.45);
+}
+
+
+/* ---------- Footer ---------- */
+#footer {
+    padding: 1.5rem var(--content-inset);
+}
+
+
+/* ---------- Responsive ---------- */
+@media (max-width: 40rem) {
+    :root {
+        --content-inset: 1.25rem;
+    }
+
+    #header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1rem;
+    }
+
+    .nav-links {
+        flex-wrap: wrap;
+        gap: 1.25rem;
+    }
+
+    #hero {
+        padding-top: 3rem;
+    }
+}
