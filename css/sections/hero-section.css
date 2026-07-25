@@ -1,0 +1,25 @@
+/* ---------- Hero Section ---------- */
+.hero-section{
+    min-height: calc(100vh - 3.5rem);
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+
+    gap: 1rem;
+
+    padding-inline: var(--content-inset);
+}
+
+.greeting{
+    color: var(--color-primary);
+}
+
+
+.hero-section-buttons{
+    display: flex;
+    gap: 1.5rem;
+    margin-top: 4rem;
+
+}

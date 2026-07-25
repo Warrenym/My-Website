@@ -1,0 +1,66 @@
+/* ---------- Font Faces ---------- */
+@font-face {
+    font-family: "Poppins";
+    src: url(/fonts/Poppins/Poppins-Regular.ttf);
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "Poppins";
+    src: url(/fonts/Poppins/Poppins-Bold.ttf);
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: "Montserrat";
+    src: url(/fonts/Montserrat/Montserrat-Regular.ttf);
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "Montserrat";
+    src: url(/fonts/Montserrat/Montserrat-SemiBold.ttf);
+    font-weight: 600;
+}
+
+
+/* ---------- Default Text Styles ---------- */
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Poppins", sans-serif;
+}
+
+h1 {
+    font-size: clamp(2.5rem, 7vw, 6rem);
+    font-weight: 700;
+    line-height: 1.05;
+}
+
+h2 {
+    font-size: clamp(2rem, 5vw, 4rem);
+    font-weight: 700;
+}
+
+h3 {
+    font-size: clamp(1.75rem, 4vw, 2.8rem);
+    font-weight: 400;
+}
+
+h4 {
+    font-size: clamp(1.5rem, 3vw, 2rem);
+    font-weight: 700;
+}
+
+h5 {
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+h6 {
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+p {
+    font-family: "Montserrat", sans-serif;
+    font-size: 1rem;
+}

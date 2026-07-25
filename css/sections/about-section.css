@@ -1,0 +1,30 @@
+.about-section{
+    min-height: calc(100vh - 3.5rem);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    background-color: hsl(0, 15%, 92%);
+
+    gap: 1rem;
+
+    padding-inline: var(--content-inset);
+}
+
+.about-section h1{
+    color: var(--color-primary);
+}
+
+.about-section p span{
+     background: var(--gradient-1);
+
+    /* Clip the background to the text */
+    background-clip: text;
+    -webkit-background-clip: text;
+
+    /* Make the text transparent */
+    color: transparent;
+    -webkit-text-fill-color: transparent;
+}

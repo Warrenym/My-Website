@@ -1,0 +1,14 @@
+/* ---------- Style Guide Variables ---------- */
+:root {
+    /* Colors */
+    --color-primary: #D34F73;
+    --color-secondary: #DA7F67;
+    --color-tertiary: #DBBEA1;
+    --color-white: #FFF9EC;
+    --color-black: #201E1F;
+    --gradient-1: linear-gradient(90deg, var(--color-primary), var(--color-secondary));
+    --gradient-2: linear-gradient(90deg, var(--color-primary), var(--color-tertiary));
+
+    /* Layout */
+    --content-inset: 3rem;
+}
