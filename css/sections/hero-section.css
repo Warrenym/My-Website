@@ -16,10 +16,29 @@
     color: var(--color-primary);
 }
 
+.hero-section p{
+    margin-top: 1rem;
+}
 
 .hero-section-buttons{
     display: flex;
     gap: 1.5rem;
     margin-top: 4rem;
 
+}
+
+/* Social Media Icons */
+.social-media-icons{
+    display: flex;
+
+    gap: 2rem;
+    
+}
+
+.social-media-icons a{
+    text-decoration: none;
+
+    color: var(--color-primary);
+    font-size: 2rem;
+    
 }

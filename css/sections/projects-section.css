@@ -1,0 +1,29 @@
+/* ---------- Project Section ---------- */
+.projects-section{
+    min-height: calc(100vh);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    gap: 3rem;
+
+    padding-inline: var(--content-inset);
+}
+
+.projects-container{
+    display: flex;
+    gap: 3rem;
+}
+
+.project-card{
+    border: 1px solid black;
+    border-radius: 16px;
+
+    padding: 1.5rem;
+}
+
+.project-card h4{
+    color: var(--color-secondary);
+}

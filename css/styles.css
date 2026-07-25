@@ -7,12 +7,14 @@
 /* ---------- Components ---------- */
 @import url("components/navBar.css");
 @import url("components/buttons.css");
+@import url("components/footer.css");
 
 
 
 /* ---------- Sections ---------- */
 @import url("sections/hero-section.css");
 @import url("sections/about-section.css");
+@import url("sections/projects-section.css");
 
 
 

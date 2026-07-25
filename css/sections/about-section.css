@@ -1,5 +1,5 @@
 .about-section{
-    min-height: calc(100vh - 3.5rem);
+    min-height: calc(100vh);
 
     display: flex;
     flex-direction: column;
