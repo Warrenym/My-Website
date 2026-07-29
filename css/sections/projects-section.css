@@ -18,6 +18,9 @@
 }
 
 .project-card{
+    display: flex;
+    flex-direction: column;
+
     border: 1px solid black;
     border-radius: 16px;
 
@@ -26,4 +29,13 @@
 
 .project-card h4{
     color: var(--color-secondary);
+}
+
+.project-card p{
+    margin-bottom: 2rem;
+}
+
+.project-card .btn{
+    margin-top: auto;
+    align-self: flex-start;
 }
